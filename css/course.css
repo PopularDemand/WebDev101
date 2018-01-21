@@ -11,6 +11,11 @@ h2 {
   font-weight: 600;
 }
 
+.loading-spinner {
+  margin: 50px auto;
+  background-color: white;
+}
+
 .content {
   margin: 0 10vw;
   padding: 10vh 10vw;

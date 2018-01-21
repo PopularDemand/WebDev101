@@ -39,7 +39,10 @@
   padding-bottom: 20px;
 }
 
-
+.loading-spinner {
+  height: 50%;
+  width: 50%;
+}
 
 .show-lessons-arrow {
   font-size: 0.8em;

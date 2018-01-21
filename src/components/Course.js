@@ -82,11 +82,15 @@ class Course extends React.Component {
   // RENDERING
 
   renderLessonSection() {
-    if (this.state.currentLesson) {
-      return (
-        <LessonSection lesson={this.state.currentLesson} />
-      )
-    }
+    return this.state.currentLesson ? (
+      <LessonSection lesson={this.state.currentLesson} />
+    ) : (
+      <img
+        src="https://s3-us-west-2.amazonaws.com/wwcode-webdev/loader-gif.gif"
+        className="loading-spinner"
+        alt="loading spinner"
+      />
+    );
   }
 
   renderLeftArrow() {

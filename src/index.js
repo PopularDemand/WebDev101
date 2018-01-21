@@ -8,17 +8,11 @@ import App from './App';
 import Course from './components/Course';
 import HomePage from './components/HomePage';
 
-
-// <Route path="/lesson/:id" component={ App } />
-// <Route exact path="/" component={ App } />
-// const history = createBrowserHistory();
-
-
 const Root = () => (
   <Router history={browserHistory}>
     <div>
       <Route component={ App }>
-        <Route exact path='/webdev101/' component={ HomePage } />
+        <Route exact path='/webdev101' component={ HomePage } />
         <Route path='/webdev101/course/:id' />
         <Route path='/webdev101/course/:id/l/:lessonRoute' component={ Course }/>
       </Route>
@@ -30,8 +24,3 @@ render(
   <Root />,
   document.getElementById('root')
 );
-
-// render(
-//   <Header />,
-//   document.getElementById('header')
-// )
