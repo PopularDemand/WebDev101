@@ -19,5 +19,5 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://wwcodedfw.github.io/webdev101"
+  "homepage": "https://populardemand.github.io/webdev101"
 }

@@ -12,7 +12,7 @@ const Root = () => (
   <Router history={browserHistory}>
     <div>
       <Route component={ App }>
-        <Route exact path='/webdev101' component={ HomePage } />
+        <Route exact path='/webdev101/' component={ HomePage } />
         <Route path='/webdev101/course/:id' />
         <Route path='/webdev101/course/:id/l/:lessonRoute' component={ Course }/>
       </Route>
